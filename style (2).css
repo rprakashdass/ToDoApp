@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    min-width: 250px;
+    background-color: #9b0959;
+  }
+
+  html,
+  body {
+    min-height: 100%;
+    color: #13060d;
+    background-color: #9b0959;
+  }
+
+  body,
+  div,
+  form,
+  input,
+  select,
+  textarea,
+  p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 24px;
+    color: #e91e63;
+    background-color: #1f0714;
+    line-height: 22px;
+    height: auto;
+  }
+
+  h1 {
+    position: absolute;
+    margin: 0;
+    line-height: 42px;
+    font-size: 42px;
+    color: #e91e63;
+    z-index: 2;
+  }
+
+  .testbox {
+    /* box-shadow: 0 0 25px 0 #9b0959;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  input[placeholder] {
+    color: #9b0959;
+    font-size: small;
+  }
+
+  form {
+    padding: 20px;
+    box-shadow: 0 0 25px 0 #9b0959;
+  }
+
+  .banner {
+    position: relative;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  input,
+  select,
+  textarea {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 #b30a6c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  input {
+    width: calc(100% - 10px);
+    padding: 5px;
+  }
+
+  .item input:hover,
+  .item select:hover,
+  .item textarea:hover,
+  li:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px 0 #d6e0f5;
+    color: #9b0959;
+  }
+
+  .item {
+    position: relative;
+    margin: 30px 30px;
+    padding: 46px;
+  }
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-row .item {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-row .item:last-child {
+  margin-right: 0;
+}
+
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  input[type="text"], input[type="submit"]{
+    height: 40px;
+    padding: 4px 5px;
+  }
+
+  .item i,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    font-size: 20px;
+    color: #a9a9a9;
+  }
+
+  .item i {
+    right: 2%;
+    top: 28px;
+    z-index: 1;
+  }
+
+  [type="date"]::-webkit-calendar-picker-indicator {
+    right: 1%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+  @media (min-width: 568px) {
+    .name-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+
+  /*CSS Code For To Do List */
+  /* Include the padding and border in an element's total width and height */
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Style the list items */
+  ul li {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #2c051f;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  ul li:nth-child(odd) {
+    background: #1d0314;
+  }
+  
+  ul li:nth-child(odd) a {
+    color: #fff;
+  }
+  
+  ul li:nth-child(even) {
+    background: #d10d48;
+  }
+  
+  ul li:nth-child(even) a {
+    color: #fff;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  input {
+    border-radius: 0;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 95%;
+    font-size: 16px;
+    background-color: #13060d;
+    color: #fff;
+  }
+  
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  ul li .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #dd0695;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #5a0936;
+  }
+
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #d171b1;
+    color: #5a1d46;
+    text-decoration: line-through;
+  }
+
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #d171b1;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+
+  .close:hover {
+    background-color: #16020f;
+    color: #9b0959;
+    padding-top: 0;
+  }
+
+  /* Style the "Add" button */
+  .btn-block {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .btn-block input[type="text"] {
+    padding-right: 40px;
+  }
+  
+  .btn-block span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    background-color: #dd0695;
+    color: #f5eaea;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .btn-block span::before {
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+  }
+  
+  .btn-block span:hover {
+    background-color: #13020c;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #13060d;
+    color: #fff;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: #dd0695;
+  }
+  
+  .social-media {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .social-media:last-child {
+    margin-right: 0;
+  }
+  
+  .menu-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-links li {
+    margin: 0 10px;
+  }
+  
+  .menu-links a {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .menu-links a:hover {
+    color: #ccc;
+  }
+  
+  

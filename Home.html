@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To->Do->AI</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/todo.css">
+</head>
+<body>
+
+  <section>
+    <div class="banner">
+      <h1>TO --> DO --> AI</h1>
+    </div>
+    <form id="myForm" onsubmit="handleFormSubmit(this)">
+
+      <div class="input-row">
+        <div class="item">
+           <!--TELL ME THIS DATE-->
+          <input type="date" name="bdate" />
+        </div>
+        <div class="item">
+        <!--ENTER TIME-->
+          <input type="time" name="time" />
+        </div>
+      </div>
+
+      <div class="item">
+        <p>ANY SPECIAL THINGS TO SAY !?</p>
+        <div class="name-item">
+          <input type="text" name="ToSay" placeholder="Yah!....." />
+        </div>
+      </div>
+
+
+      <div class="item">
+        <label>7 AM</label>
+        <div class="name-item">
+          <input type="text" name="time-name" placeholder="Yah!....." />
+        </div>
+      </div>
+
+      <div class="item">
+        <label>7:00AM - 8:10AM</label>
+        <div class="name-item">
+          <input type="text" name="time-name" placeholder="Yah!....." />
+        </div>
+      </div>
+
+      <div class="item">
+        <label> 4:45-5:15 </label>
+        <div class="name-item">
+          <input type="text" name="time-name" placeholder="Yah!....." />
+        </div>
+      </div>
+
+      <div class="item">
+        <label>5:15-7:00</label>
+        <div class="name-item">
+          <input type="text" name="time-name" placeholder="Yah!....." />
+        </div>
+      </div>
+
+      <div class="item">
+        <label> 7:40-8:10 PM</label>
+        <div class="name-item">
+          <input type="text" name="time-name" placeholder="Yah!....." />
+        </div>
+      </div>
+
+      <div class="item">
+        <label> TILL 9:35 PM </label>
+        <div class="name-item">
+          <input type="text" name="time-name" placeholder="Yah!....." />
+        </div>
+      </div>
+
+      <div class="item">
+        <p>TOMOROW'S To-Do</p>
+        <div class="name-item">
+          <input type="text" name="To-Do-tomorrow" placeholder="Listen!....." />
+        </div>
+      </div>
+
+      <!--To Do-->
+
+      <div class="item">
+        <p>DITES-MOI CETTE DATE</p> <!--TELL ME THIS DATE-->
+        <div class="btn-block">
+          <input type="text" id="myInput" name="To-Do-List" placeholder="Title...">
+          <span onclick="newElement()"></span>
+        </div>
+      
+      
+      <ul id="myUL">
+        <li><a href="https://youtu.be/JMUxmLyrhSk">After SEM AI corse MODULE</a></li>
+        <li><a href="https://youtu.be/_uQrJ0TkZlc">Complete .Py</a></li>
+        <li><a href="https://youtu.be/Wo5dMEP_BbI">Build Neural network from scratch></a></li>
+        <li><a href="https://www.w3schools.com/tags/ref_colornames.asp">Colors Html</a></li>
+        <li>NLP for TO-DO</li>
+        <li class="checked">Hit the Exercise</li>
+        <li>Pay bills</li>
+        <li>Wake up at 4:15 aAM</li>
+      </ul><br>
+      <input type="submit" value="SEE YOUR SCHEDULED TIMETABLE" href="./courses.html" style="text-align: center;margin-left: 20px;"></input>
+      </div>
+      
+    </form>
+    </div>
+
+  </section>
+
+  <!--footer class="footer">
+    <nav>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      <ul class="menu-links">
+        <li><a href="./timeline.html">Research</a></li>
+        <li><a href="./about.html">Tour</a></li>
+        <li><a href="../pag1.html">Regarding On</a></li>
+        <li><a href="../index.html">SIGN UP</a></li>
+      </ul>
+    </nav>
+  </footer-->
+  
+
+  <!-- To Do list JS IS HERE-->
+
+<script src="../script/todo.js"></script>
+</body>
+</html>
